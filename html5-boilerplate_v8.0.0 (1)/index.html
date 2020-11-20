@@ -12,20 +12,115 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
 
+<body>
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+    <header>
+        <div class="full-width">
+            <div class="half-width">
+                <h2>Nina Kalpakis</h2>
+            </div>
+            <div class="half-width">
+                <nav>
+                    <ul>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#portfolio">Portfolio</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>Let's code.</h1>
+            <h3><span>Hi there!</span> I'm Nina, a web developer and creative thinker in Memphis.</h3>
+            <p>I am passionate about making the world a more beautiful place.</p>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="full-width">
+            <h2>about me</h2>
+            <img src="img/headshot.png" alt="headshot">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+                <div class="half-width">
+                      <p>
+                      My journey into tech started with a love for design and an eye for detail.
+                      As a graduate student in business, I decided to add some coding skills to my repertoire &ndash; just to keep in my back pocket.
+                      But what started as curiosity soon changed to passion, and it wasn't long before I was hooked.
+                      I loved the entire process of creating a project... from building the bones of a site with HTML, to meticulously curating
+                      its design with CSS, all while collaborating with others along the way.
+                      </p>
+                </div>
+                <div class="half-width">
+                      <p>
+                      Through learning to code, I realized I had found something that gave me the freedom &amp; versatility I was looking for in my work. 
+                      Now I've made a full switch to front-end development, where I can use my love for design and
+                      eye for detail to write clean and elegant code. I focus on writing organized code with HTML that provides efficient and effective communication,
+                      and I am passionate about creating clean designs with CSS, JavaScript, React, and responsive web design principles that are both beautiful and functional.
+                      </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="full-width">
+                <h2>portfolio work</h2>
+                <div class="third-width">
+                  <img src="img/rogue-pickings-thumbnail.png" alt="rogue image">
+                    <h3>Rogue Pickings</h3>
+                    <p>HTML &amp; CSS from Photoshop Design Comp</p>
+                </div>
+                <div class="third-width">
+                    <img src="img/jubilee-thumbnail.png" alt="jubilee image">
+                    <h3>Jubilee Austen</h3>
+                    <p>HTML5 &amp; CSS Website</p>
+                </div>
+                <div class="third-width">
+                    <img src="img/recipe-thumbnail.png" alt="recipe image">
+                    <h3>Recipe Collection</h3>
+                    <p>HTML5 &amp; CSS exercise</p>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+          <h2>Let's Connect!</h2>
+          <div class="full-width">
+              <div class="third-width">
+                <h3>hire me</h3>
+                <p>kalpakis.nina@gmail.com</p>
+              </div>
+              <div class="third-width">
+                <h3>follow me</h3>
+                <ul>
+                    <li><a href="https://twitter.com/ninakalpakis?lang=en" target="_BLANK"><img src="img/twitter.png" alt="twitter icon" ></a></li>
+                    <li><a href="https://github.com/ninakalpakis" target="_BLANK"><img src="img/github.png" alt="github icon"></a></li>
+                    <li><a href="https://www.linkedin.com/in/nina-kalpakis1194/" target="_BLANK"><img src="img/linkedin.png" alt="linkedin icon"></a></li>
+                </ul>
+              </div>
+              <div class="third-width">
+                  <h3>let's grab a coffee!</h3>
+                  <p>give me a call at xxx</p>
+              </div>
+          </div>
+        </footer>
+    </main>
+  </body>
+
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
