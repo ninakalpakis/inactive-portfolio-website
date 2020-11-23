@@ -22,61 +22,134 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,400&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo)wtJAoU8YZTY5qE0Id1GSseTk6S+L3B1XeVIU" crossorigin="anonymous">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 
 <body>
   <!-- Add your site or application content here -->
-    <header>
-        <div class="full-width">
-            <div class="half-width">
-                <h2>Nina Kalpakis</h2>
-            </div>
-            <div class="half-width">
-                <nav>
-                    <ul>
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#portfolio">Portfolio</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <h1>Let's code.</h1>
-            <h3><span>Hi there!</span> I'm Nina, a web developer and creative thinker in Memphis.</h3>
-            <p>I am passionate about making the world a more beautiful place.</p>
-        </div>
-    </header>
-    <main>
-        <section id="about">
-            <div class="full-width">
-            <h2>about me</h2>
-            <img src="img/headshot.png" alt="headshot">
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
-                <div class="half-width">
-                      <p>
-                      My journey into tech started with a love for design and an eye for detail.
-                      As a graduate student in business, I decided to add some coding skills to my repertoire &ndash; just to keep in my back pocket.
-                      But what started as curiosity soon changed to passion, and it wasn't long before I was hooked.
-                      I loved the entire process of creating a project... from building the bones of a site with HTML, to meticulously curating
-                      its design with CSS, all while collaborating with others along the way.
-                      </p>
-                </div>
-                <div class="half-width">
-                      <p>
-                      Through learning to code, I realized I had found something that gave me the freedom &amp; versatility I was looking for in my work. 
-                      Now I've made a full switch to front-end development, where I can use my love for design and
-                      eye for detail to write clean and elegant code. I focus on writing organized code with HTML that provides efficient and effective communication,
-                      and I am passionate about creating clean designs with CSS, JavaScript, React, and responsive web design principles that are both beautiful and functional.
-                      </p>
-                </div>
-            </div>
-        </section>
+  <header>
+    <div class="content-wrapper">
+      <figure>
+        <a href="#">
+        <img src="img/logo.png" alt="nina logo">
+        </a>
+      </figure>
+        <div class="header-divider"></div>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact"></a>Contact</li>
+          </ul>
+        </nav>
+    </div>
+  </header> 
+  
+  <main>
 
-        <section id="portfolio">
-            <div class="full-width">
+    <section class="greeting">
+      <div class="content-wrapper">
+        <h1>Hello! <br><span>I'm Nina.</span></h1>
+        <h2>I'm a web developer and creative thinker in Memphis.</h2>
+      </div>
+    </section>
+
+    <aside>
+      <div class="content-wrapper">
+        <div class="form-description">
+          <h3>Wanna work with me?</h3>
+          <p>Let's do it! I'm available for freelance to help you create a beautiful and fully functional website.</p>
+        </div>
+        <div class="form">
+            <h3>Reach out.</h3>
+            <input type="text" name="name" value="name@email.com">
+            <input type="button" value="Shoot me an email!">
+        </div>
+      </div> <!-- aside content wrapper ends -->
+    </aside>
+
+    <section class="skills">
+      <div class="content-wrapper">
+        <h2>A few skills I bring to the table...</h2>
+        <figure>
+          <a href="#">
+          </a>
+        </figure>
+          <div class="skills-items">
+            <article>
+              <p class="fontawesome-icon">
+                <i class="fab fa-html5"></i>
+              </p>
+              <p class="skills-item-description">HTML-5</p>
+        </article>
+        <article>
+          <p class="fontawesome-icon">
+            <i class="fab fa-css3"></i>
+          </p>
+          <p class="skills-item-description">CSS-3</p>
+        </article>
+        <article>
+          <p class="fontawesome-icon">
+            <i class="fab fa-js-square"></i>
+          </p>
+          <p class="skills-item-description">JavaScript</p>
+        </article>
+        <article>
+          <p class="fontawesome-icon">
+            <i class="fab fa-react"></i>
+          </p>
+          <p class="skills-item-description">React.js</p>
+        </article>
+        <article>
+          <p class="fontawesome-icon">
+            <i class="fas fa-laptop-code"></i>
+          </p>
+          <p class="skills-item-description">Responsive Web Design</p>
+        </article>
+        <article>
+          <p class="fontawesome=icon">
+            <i class="fab fa-github"></i>
+          </p>
+          <p class="skills-item-description">Version Control</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="content-wrapper">
+      <h2>a little about me</h2>
+      <article>
+        <figure>
+          <a href="">
+            <img src="img/headshot.png" alt="headshot"/>
+          </a>
+        </figure>
+        <div>
+          <h3>I have a passion for making the world a more beautiful place.</h3>
+          <p>
+            My journey into tech started with a love for design and an eye for detail.
+            As a graduate student in business, I decided to add some coding skills to my repertoire &ndash; just to keep in my back pocket.
+            But what started as curiosity soon changed to passion, and it wasn't long before I was hooked.
+            I loved the entire process of creating a project... from building the bones of a site with HTML, to meticulously curating
+            its design with CSS, all while collaborating with others along the way.
+            </p><br>
+            <p>
+            Through learning to code, I realized I had found something that gave me the freedom &amp; versatility I was looking for in my work. 
+            Now I've made a full switch to front-end development, where I can use my love for design and
+            eye for detail to write clean and elegant code. I focus on writing organized code with HTML that provides efficient and effective communication,
+            and I am passionate about creating clean designs with CSS, JavaScript, React, and responsive web design principles that are both beautiful and functional.
+            </p>
+        </div>
+      </article>
+    </div>
+</section>
+
+<section id="portfolio">
+        <div class="full-width">
                 <h2>portfolio work</h2>
                 <div class="third-width">
                   <img src="img/rogue-pickings-thumbnail.png" alt="rogue image">
@@ -93,10 +166,10 @@
                     <h3>Recipe Collection</h3>
                     <p>HTML5 &amp; CSS exercise</p>
                 </div>
-            </div>
-        </section>
+         </div>
+   </section>
 
-        <footer id="contact">
+   <footer id="contact">
           <h2>Let's Connect!</h2>
           <div class="full-width">
               <div class="third-width">
