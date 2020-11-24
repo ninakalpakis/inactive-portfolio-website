@@ -93,6 +93,7 @@ textarea {
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -100,6 +101,8 @@ body {
   font-size: 1em;
   text-align: left;
   color: #2b2b2b;
+  margin: 0px;
+  padding: 0px;
 }
 
 ul,
@@ -132,23 +135,28 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  width: 100%;
 }
 
-header figure {
-  width: 10%;
+header h4 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  color: #edddd4;
+
+  margin: 10px;
 }
 
 .header-divider {
   background: #edddd4;
   width: 100%;
-  height: 1px;
+  height: 2px;
   margin: 10px 0 20px 0;
 }
-
+  
 header nav {
   display: flex;
   justify-content: space-around;
@@ -158,6 +166,8 @@ header nav {
   font-size: 1.125em;
   font-weight: 700;
   text-transform: lowercase;
+  font-family: 'Playfair Display', serif;
+  font-style: oblique;
 }
 
 header nav ul {
@@ -178,26 +188,30 @@ header nav ul li {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url('../img/work.png');
+  background: url('../img/peach-tree.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 80%;
 }
 
-h1 {
-  color: gray;
+.greeting h1 {
+  color: #edddd4;
   font-family: 'Playfair Display', serif;
-  font-size: 4em;
+  font-size: 3em;
 }
 
-h1 span {
-  color: #197278;
+.greeting h1 span {
+  color: #edddd4;
 }
 
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
-  color: gray;
+.greeting h3 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.5em;
+  color: #c44536;
+  background-color: #edddd4;
+  display: inline-block;
 }
 
 /* Aside */
@@ -243,11 +257,17 @@ input[type=button] {
   background-color: #c44536;
 }
 
-.skills h2 {
+.skills h3 {
   margin: 40px;
   color: #edddd4;
   font-family: 'Playfair Display', serif;
   font-style: italic;
+  font-size: 2em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
 }
 
 .skills article {
@@ -274,30 +294,38 @@ input[type=button] {
 }
 
 /* About */
+
 #about {
-  background-color: #edddd4;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  background-color: #edddd4;
 }
 
 #about h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 4em;
+  font-size: 2.75em;
   color: #197278;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  text-align: center;
 }
 
 #about img {
-  width: 60%;
+  width: 80%;
+  margin: 2.5em;
   border: 1em solid #c44536;
-  margin: 1em;
   padding: 0.5em;
+}
+
+#about h3 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: gray;
+  font-size: 1.5em;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -307,12 +335,126 @@ input[type=button] {
 
 #about p {
   color: #772e25;
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.285em;
   padding-left: 1em;
   padding-right: 1em;
+  text-align: center;
 }
 
+/* Portfolio */
+
+#portfolio {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: #c44536;
+}
+
+#portfolio .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+#portfolio h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.75em;
+  color: #edddd4;
+  margin: 40px;
+  text-align: center;
+}
+
+#portfolio .portfolio-content {
+  width: 80%;
+  margin: 20px 0;
+}
+
+#portfolio img {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1em;
+  width: 90%;
+  border: 1em solid #edddd4;
+  padding: 0.25em;
+}
+
+#portfolio h3 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.75em;
+  color: #edddd4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#portfolio p {
+  font-family: 'Montserrat', sans-serif;
+  color: #edddd4;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+/* Contact */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #197278;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer .content-wrapper {
+  width: 100%;
+  margin: 50px 0;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer h4 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 2em;
+  color: #edddd4;
+}
+
+footer i {
+  color: #edddd4;
+  font-size: 3em;
+  margin: 1em;
+}
+
+footer p {
+  color: #edddd4;
+  line-height: 2;
+  margin: 0;
+}
+
+footer .design {
+  margin: 20px 0;
+  width: 100%;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -401,14 +543,28 @@ input[type=button] {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 1200px) {
-   /* Desktop styles here */
+@media only screen and (min-width: 768px) {
+  /* Tablet Styles here */
+
+  /* About */
+
+
   /* Features */
-  .features h2 {
+  .skills article {
+    flex-basis: 33%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+   /* Desktop Styles here */
+
+  /* Features */
+  .skills h3 {
     width: 90%;
   }
-  .features article {
-    flex-basis: 33%;
+  .skills article {
+    flex-basis: 25%;
   }
 }
 
